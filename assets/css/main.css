@@ -34,6 +34,8 @@
 
 .main-container {
     border-radius: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 header .nav .nav-item:first-child .nav-link {
     border-top-left-radius: 2rem!important;
@@ -72,7 +74,7 @@ header .nav .nav-link.active {
 
 .tab-card {
     border-radius: 1rem!important;
-    width: 160px;
+    width: 148px;
     color: #343a40 !important;
 }
 
@@ -84,4 +86,24 @@ header .nav .nav-link.active {
 .tab-card.active {
     box-shadow: 0 0 0 0.2rem rgba(255, 191, 0, .5)!important;
     color:  #FFBF00!important;
+}
+
+.product-card {
+    border-radius: .9rem;
+}
+
+.product-card img {
+    object-fit: cover;
+    max-height: 132px;
+    border-top-left-radius: .9rem!important;
+    border-top-right-radius: .9rem!important;
+}
+
+.btn-counter {
+    line-height: 10px;
+}
+.counter-container {
+    position: absolute;
+    top: -22px;
+    left: calc(50% - 22px);
 }
