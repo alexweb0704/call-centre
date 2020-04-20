@@ -1,0 +1,87 @@
+
+.bg-dark {
+    background-color: #181716!important;
+}
+
+.rounded-pill-right {
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+}
+.rounded-pill-left {
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+}
+.login-card {
+    border-radius: 16px;
+    min-width: 280px;
+}
+
+.login-logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.btn-warning {
+    background-color: #FFBF00!important;
+}
+.form-control:focus {
+    color: #495057!important;
+    background-color: #fff!important;
+    border-color: #ced4da;
+    outline: 0!important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)!important;
+}
+
+.main-container {
+    border-radius: 2rem;
+}
+header .nav .nav-item:first-child .nav-link {
+    border-top-left-radius: 2rem!important;
+}
+
+header .nav .nav-link.active {
+    background-color: #FFBF00;
+}
+.bg-warning {
+    background-color: #FFBF00!important;
+}
+
+.nav-link {
+    line-height: normal;
+}
+
+.table-bordered tr td, .table-bordered tr th {
+    border-top: 0!important;
+    vertical-align: middle;
+}
+.table-bordered td {
+    border-bottom: 0!important;
+    vertical-align: middle;
+}
+.table-bordered  td:first-child, .table-bordered  th:first-child {
+    border-left: 0!important;
+}
+
+.table-bordered  td:last-child, .table-bordered  th:last-child {
+    border-right: 0!important;
+}
+
+.btn-sm {
+    line-height: normal;
+}
+
+.tab-card {
+    border-radius: 1rem!important;
+    width: 160px;
+    color: #343a40 !important;
+}
+
+.tab-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.tab-card.active {
+    box-shadow: 0 0 0 0.2rem rgba(255, 191, 0, .5)!important;
+    color:  #FFBF00!important;
+}
