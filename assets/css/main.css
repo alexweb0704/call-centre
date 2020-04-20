@@ -90,11 +90,12 @@ header .nav .nav-link.active {
 
 .product-card {
     border-radius: .9rem;
+    width: 150px;
 }
 
 .product-card img {
     object-fit: cover;
-    max-height: 132px;
+    max-height: 126px;
     border-top-left-radius: .9rem!important;
     border-top-right-radius: .9rem!important;
 }
