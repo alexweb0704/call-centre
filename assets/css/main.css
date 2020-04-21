@@ -93,6 +93,13 @@ header .nav .nav-link.active {
     width: 150px;
 }
 
+.badge img {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    height: 12px;
+    margin-bottom: 3px;
+}
+
 .product-card img {
     object-fit: cover;
     max-height: 126px;
