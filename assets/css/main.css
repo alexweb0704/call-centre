@@ -192,3 +192,33 @@ header .nav .nav-link.active {
 :focus {
     outline: 0;
 }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #FFBF00;
+    background-color: #FFBF00;
+  }
+  
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem #FFBF0050;
+  }
+  
+.custom-control-label::before {
+    border: #FFBF00 solid 1px;
+  }
+  
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #FFBF00;
+  }
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

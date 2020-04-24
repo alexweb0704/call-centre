@@ -448,16 +448,166 @@
                                     </tbody>
                                 </table>
                                 <div class="mt-5 px-5">
-                                    <a class="text-dark d-flex align-items-center" href="#">
+                                    <a class="text-dark d-flex align-items-center" data-toggle="modal"
+                                        data-target="#createOrder">
                                         <div class="rounded-circle bg-warning text-center">
                                             <img src="assets/icons/plus-big.png" alt="" height="60">
                                         </div>
-                                        <div class="ml-3">Создать новый заказ</div>
+                                        <div class="ml-3">Создать новый <br> заказ</div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </main>
+                    <div class="modal fade preview-modal" id="createOrder" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content border-light shadow">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">
+                                        Создать заказ
+                                    </h5>
+                                </div>
+                                <div class="modal-body table-responsive-xl p-4">
+                                    <div class="form-row">
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    Телефон 1:
+                                                </label>
+                                                <div class="col">
+                                                    <input type="text"
+                                                        class="form-control border-0 border-bottom-warning rounded-0 form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    Телефон 2:
+                                                </label>
+                                                <div class="col">
+                                                    <input type="text"
+                                                        class="form-control border-0 border-bottom-warning rounded-0 form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    ФИО:
+                                                </label>
+                                                <div class="col">
+                                                    <input type="text"
+                                                        class="form-control border-0 border-bottom-warning rounded-0 form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    Адрес:
+                                                </label>
+                                                <div class="col">
+                                                    <div class="search-container">
+                                                        <input type="text"
+                                                            class="form-control border-0 border-bottom-warning rounded-0 form-control-sm">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    Филиал:
+                                                </label>
+                                                <div class="col">
+                                                    <select
+                                                        class="form-control form-control-sm border-0 border-bottom-warning rounded-0">
+                                                        <option>Small select</option>
+                                                        <option>select</option>
+                                                        <option>elect</option>
+                                                        <option>lect</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 container">
+                                            <div class="form-group row">
+                                                <label class="col-auto">
+                                                    Дата:
+                                                </label>
+                                                <div class="col form-row">
+                                                    <div class="col">
+                                                        <input type="text" data-day
+                                                            class="form-control border-0 border-bottom-warning rounded-0 form-control-sm"
+                                                            style="width: 32px;" value="23" maxlength="2">
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <select
+                                                            class="w-100 form-control form-control-sm border-0 border-bottom-warning rounded-0">
+                                                            <option>Январь</option>
+                                                            <option>Февраль</option>
+                                                            <option>Март</option>
+                                                            <option>Апрель</option>
+                                                            <option>Май </option>
+                                                            <option>Июнь </option>
+                                                            <option>Июль </option>
+                                                            <option>Август </option>
+                                                            <option>Сентябрь </option>
+                                                            <option value="">Октябрь </option>
+                                                            <option value="">Ноябрь </option>
+                                                            <option value="">Декабрь </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="text"
+                                                            class="form-control border-0 border-bottom-warning rounded-0 form-control-sm"
+                                                            value="2020" readonly max="31" style="width: 46px;">
+                                                    </div>
+                                                    <div class="col-auto">
+
+                                                        <input type="text"
+                                                            class="form-control border-0 border-bottom-warning rounded-0 form-control-sm"
+                                                            value="23" data-hours max="59" maxlength="2"
+                                                            style="width: 32px;">
+                                                    </div>
+                                                    <div class="col d-flex">
+                                                        :
+                                                        <input type="text"
+                                                            class="form-control border-0 border-bottom-warning rounded-0 form-control-sm"
+                                                            value="58" data-minutes max="59" maxlength="2"
+                                                            style="width: 32px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-checkbox mr-sm-2">
+                                            <input type="checkbox" class="custom-control-input border-warning"
+                                                id="customControlAutosizing">
+                                            <label class="custom-control-label"
+                                                for="customControlAutosizing">Самовывоз</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer border-0 p-4">
+                                    <button class="btn btn-sm btn-warning rounded-pill px-5 mr-auto">
+                                        Отмена
+                                    </button>
+                                    <button class="btn btn-sm btn-warning rounded-pill px-5" data-dismiss="modal">
+                                        Создать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-1"></div>
@@ -465,6 +615,30 @@
     </div>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script>
+        $('input[data-day]').keyup(function () {
+            $(this).val(isNaN(parseInt($(this).val())) ? 1 : parseInt($(this).val()));
+            if ($(this).val() < 1) {
+                $(this).val(1);
+            }
+            if ($(this).val() > 31) {
+                $(this).val(31);
+            }
+        });
+        $('input[data-hours]').keyup(function () {
+            $(this).val(isNaN(parseInt($(this).val())) ? 1 : parseInt($(this).val()));
+            if ($(this).val() > 23) {
+                $(this).val(23);
+            }
+        });
+        $('input[data-minutes]').keyup(function () {
+            $(this).val(isNaN(parseInt($(this).val())) ? 1 : parseInt($(this).val()));
+            if ($(this).val() > 59) {
+                $(this).val(59);
+            }
+        });                                
+    </script>
+
 </body>
 
 </html>
